@@ -19,23 +19,23 @@ $assoc = [
     "band_3" => "Alter Bridge"
 ];
 
-//array_unshift( &array:$index, var:"Teste");
+array_unshift( &array:$index, var:"Teste");
 $assoc = ["band_4" => "Pearl Jam", "band_5" => ""] + $assoc;
 
-/*array_push( &array:$index);
-$assoc = $assoc + ["band_6" => ""]
+array_push( &array:$index, var: "");
+$assoc = $assoc + ["band_6" => ""];
 
-array_shift( &array:$index);
-array_shift( &array:$assoc);
+array_shift( array &$index );
+array_shift( array &$assoc );
 
-array_pop( &array:$index);
-array_pop( &array:$assoc);
+array_pop( array &$index );
+array_pop( array &$assoc );
 
-array_unshift( &array:$index);
+array_unshift( &array:$index, var:"");
 
 $index = array_filter($index);
 $assoc = array_filter($assoc);
-*/
+
 var_dump(
     $index,
     $assoc
